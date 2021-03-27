@@ -35,6 +35,12 @@ export const ImagemPerfil = styled.div`
   place-content: center;
 `;
 
+export const NomePerfil = styled.div`
+margin-right:130px;
+color: #FFFFFF;
+font-size:24px;
+`; 
+
 export const ImagePng = styled.img`
   border-radius: 50%;
   width: 26px;

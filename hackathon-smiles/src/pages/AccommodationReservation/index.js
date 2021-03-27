@@ -1,5 +1,7 @@
-import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Card, Footer, MainImage, MainText } from "./styles";
-import profile from '../../assets/img/signpost.png';
+import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Footer, MainImage, MainText, SignPost, ImagePng, NomePerfil, StarDiv } from "./styles";
+import profile from "../../assets/img/profile-pic.png";
+import signpost from "../../assets/img/signpost.png";
+
 import arrow from '../../assets/img/arrow.png';
 import imageReservation from '../../assets/img/reservation.png';
 import star from '../../assets/img/star 1.png';
@@ -20,19 +22,29 @@ const Home = () => {
         <div className="App">
             <PurpleBackground>
                 <TopBar>
-                    <div><StarImg src={star} /></div>
-                    <div><StarSpan>150</StarSpan></div>
+                    <ImagemPerfil>
+                        <ImagePng src={profile} />
+                    </ImagemPerfil>
+                    <NomePerfil>
+                        Maria
+                    </NomePerfil>
+                    <StarDiv>
+                        <div>
+                            <StarImg src={star} />
+                        </div>
+                        <StarSpan>150</StarSpan>
+                    </StarDiv>
                 </TopBar>
-                <ImagemPerfil>
-                    <img src={profile} />
-                </ImagemPerfil>
+                <SignPost>
+                    <img src={signpost} />
+                </SignPost>
             </PurpleBackground>
             <MainContainer>
                 <img className="arrow" src={arrow} />
                 <WelcomeP>Reserva de hospedagem</WelcomeP>
                 <MainImage width="196.73px" src={imageReservation} />
                 <MainText>
-                Nessa etapa, vamos te ajudar a encontrar qual tipo de hospedagem é mais a sua cara e não deixar você esquecer de nada importante.
+                    Nessa etapa, vamos te ajudar a encontrar qual tipo de hospedagem é mais a sua cara e não deixar você esquecer de nada importante.
                 </MainText>
                 <div className="button"><p>Já encontrei</p></div>
                 <div className="button active">Vamos!</div>

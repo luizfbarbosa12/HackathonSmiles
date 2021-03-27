@@ -12,10 +12,11 @@ import {
   CardImage,
   Footer,
   ImagePng,
-  LeftArrow, 
+  LeftArrow,
   SignPost,
   SignPostImage,
-  WhiteBorder
+  WhiteBorder,
+  NomePerfil
 } from "./styles";
 import star from "../../assets/img/star 1.png";
 import profile from "../../assets/img/profile-pic.png";
@@ -37,6 +38,9 @@ const Escolhas = () => {
           <ImagemPerfil>
             <ImagePng src={profile} />
           </ImagemPerfil>
+          <NomePerfil>
+            Maria
+          </NomePerfil>
           <StarDiv>
             <div>
               <StarImg src={star} />
@@ -45,7 +49,7 @@ const Escolhas = () => {
           </StarDiv>
         </TopBar>
         <WhiteBorder>
-            <SignPost><SignPostImage src={signpost}/></SignPost>
+          <SignPost><SignPostImage src={signpost} /></SignPost>
         </WhiteBorder>
       </PurpleBackground>
       <MainContainer>
@@ -55,24 +59,24 @@ const Escolhas = () => {
         <WelcomeP>Escolhas</WelcomeP>
         <Card>
           <div>
-              <img src={brain}/>
+            <img src={brain} />
           </div>
           <p>Compra de Passagem</p>
-          <div><img src={check}/></div>
+          <div><img src={check} /></div>
         </Card>
         <Card>
           <div>
-              <img src={notebook}/>
+            <img src={notebook} />
           </div>
           <p>Compra de Passagem</p>
-          <div><img src={rightArrow}/></div>
+          <div><img src={rightArrow} /></div>
         </Card>
       </MainContainer>
       <Footer>
         <ul>
           <li>
             <div className="options">
-              <img width="13px" src={menu}/> <br/>
+              <img width="13px" src={menu} /> <br />
               Fases
             </div>
           </li>
