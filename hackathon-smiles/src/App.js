@@ -1,6 +1,7 @@
 import "./App.css";
-import Home from "./pages/home"
 import AccommodationReservation from "./pages/AccommodationReservation"
+import Home from "./pages/Home/home"
+import Choices from './pages/Choices'
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
      {/* <Home/> */}
      <AccommodationReservation/>
+     {/* <Choices/> */}
     </div>
   );
 }

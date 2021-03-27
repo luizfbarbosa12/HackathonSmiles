@@ -9,20 +9,45 @@ export const PurpleBackground = styled.header`
 `
 
 export const TopBar = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 24px;
-`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+`;
 export const StarImg = styled.img`
-    margin-right: 5px;
-`
+  margin-right: 5px;
+`;
 
 export const StarSpan = styled.span`
-    color: #F4F2F2;
-`
+  color: #f4f2f2;
+`;
+
+export const StarDiv = styled.div`
+  display: flex;
+`;
 
 export const ImagemPerfil = styled.div`
+  border-radius: 50%;
+  background-color: #f4f2f2;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  place-items: center;
+  place-content: center;
+`;
+
+export const NomePerfil = styled.div`
+margin-right:130px;
+color: #FFFFFF;
+font-size:24px;
+`; 
+
+export const ImagePng = styled.img`
+  border-radius: 50%;
+  width: 26px;
+  height: 41px;
+`;
+export const SignPost = styled.div`
     position: absolute;
     left: 25%;
     right: 25%;
@@ -35,10 +60,6 @@ export const ImagemPerfil = styled.div`
     height: 145px;
     margin: 0 auto;
     z-index: 10;
-`
-
-export const ImagePng = styled.img`
-    border-radius: 50%;
 `
 
 export const MainContainer = styled.main`
