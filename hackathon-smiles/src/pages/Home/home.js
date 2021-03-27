@@ -1,14 +1,14 @@
 import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Card, CardImage, Footer } from "./styles";
-import profile from '../assets/img/profile-pic.png';
-import star from '../assets/img/star 1.png';
+import profile from '../../assets/img/profile-pic.png';
+import star from '../../assets/img/star 1.png';
 
-import profileGlobe from '../assets/img/profile-globe.png';
-import profileKey from '../assets/img/profile-key.png';
-import profileList from '../assets/img/profile-list.png';
-import profilePassport from '../assets/img/profile-passport.png';
-import profileSignPost from '../assets/img/profile-signpost.png';
-import profileTicket from '../assets/img/profile-ticket.png';
-import menu from '../assets/img/menu.png';
+import profileGlobe from '../../assets/img/profile-globe.png';
+import profileKey from '../../assets/img/profile-key.png';
+import profileList from '../../assets/img/profile-list.png';
+import profilePassport from '../../assets/img/profile-passport.png';
+import profileSignPost from '../../assets/img/profile-signpost.png';
+import profileTicket from '../../assets/img/profile-ticket.png';
+import menu from '../../assets/img/menu.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBorderAll } from '@fortawesome/free-solid-svg-icons'
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
