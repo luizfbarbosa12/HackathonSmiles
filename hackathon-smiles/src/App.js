@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Card } from "./styles";
+import profile from './assets/img/profile-pic.png'
+import star from './assets/img/star 1.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PurpleBackground>
+        <TopBar>
+          <div><StarImg src={star}/></div>
+          <div><StarSpan>150</StarSpan></div>
+        </TopBar>
+        <ImagemPerfil>
+          <img src={profile}/>
+        </ImagemPerfil>
+      </PurpleBackground>
+      <MainContainer>
+        <WelcomeP>Bem-vinda, Maria!</WelcomeP>
+        <Card>
+          <img/>
+          <p></p>
+        </Card>
+        <Card>
+        <img/>
+          <p></p>
+        </Card>
+        <Card>
+        <img/>
+          <p></p>
+        </Card>
+        <Card>
+        <img/>
+          <p></p>
+        </Card>
+        <Card>
+        <img/>
+          <p></p>
+        </Card>
+        <Card>
+        <img/>
+          <p></p>
+        </Card>
+      </MainContainer>
     </div>
   );
 }
