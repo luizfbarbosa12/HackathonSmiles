@@ -1,13 +1,15 @@
 import "./App.css";
+import AccommodationReservation from "./pages/AccommodationReservation"
 import Home from "./pages/Home/home"
-import Escolhas from './pages/Escolhas/escolhas'
+import Choices from './pages/Choices'
 
 
 function App() {
   return (
     <div className="App">
      {/* <Home/> */}
-     <Escolhas/>
+     <AccommodationReservation/>
+     {/* <Choices/> */}
     </div>
   );
 }
