@@ -6,6 +6,7 @@ import Choices from './pages/Choices'
 import Remember from "./pages/Remember";
 import YouWillTravel from "./pages/YouWillTravel";
 import WhichAccomodation from './pages/WhichAccomodation'
+import WhatKindOfPension from './pages/WhatKindOfPension'
 
 
 function App() {
@@ -16,10 +17,10 @@ function App() {
      {/* <Choices/> */}
      {/* <Remember/> */}
      {/* <CompleteMissions/> */}
-     <YouWillTravel/>
+     <WhatKindOfPension/>
      {/* <Remember/>
     //  <CompleteMissions/> */}
-    <WhichAccomodation/>
+    {/* <WhichAccomodation/> */}
     </div>
   );
 }
