@@ -9,7 +9,6 @@ import {
   WelcomeP,
   StarDiv,
   Card,
-  CardImage,
   Footer,
   ImagePng,
   LeftArrow,
@@ -36,65 +35,65 @@ const Escolhas = () => {
       <PurpleBackground>
         <TopBar>
           <ImagemPerfil>
-            <ImagePng src={profile} />
+            <ImagePng src={profile} alt={''}/>
           </ImagemPerfil>
           <NomePerfil>
             Maria
           </NomePerfil>
           <StarDiv>
             <div>
-              <StarImg src={star} />
+              <StarImg src={star} alt={''}/>
             </div>
             <StarSpan>150</StarSpan>
           </StarDiv>
         </TopBar>
         <WhiteBorder>
-          <SignPost><SignPostImage src={signpost} /></SignPost>
+          <SignPost><SignPostImage src={signpost} alt={''}/></SignPost>
         </WhiteBorder>
       </PurpleBackground>
       <MainContainer>
         <LeftArrow>
-          <img src={arrow} />
+          <img src={arrow} alt={''}/>
         </LeftArrow>
         <WelcomeP>Escolhas</WelcomeP>
         <Card>
           <div>
-            <img src={brain} />
+            <img src={brain} alt={''}/>
           </div>
           <p>Compra de Passagem</p>
-          <div><img src={check} /></div>
+          <div><img src={check} alt={''}/></div>
         </Card>
         <Card>
           <div>
-            <img src={notebook} />
+            <img src={notebook} alt={''}/>
           </div>
           <p>Compra de Passagem</p>
-          <div><img src={rightArrow} /></div>
+          <div><img src={rightArrow} alt={''}/></div>
         </Card>
       </MainContainer>
       <Footer>
         <ul>
           <li>
             <div className="options">
-              <img width="13px" src={menu} /> <br />
+              <img width="13px" src={menu} alt={''}/> <br />
               Fases
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faStar} /><br />
+              <FontAwesomeIcon icon={faStar} alt={''}/><br />
               Prêmios
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faMap} /><br />
+              <FontAwesomeIcon icon={faMap} alt={''}/><br />
               Mapa
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faUser} /><br />
+              <FontAwesomeIcon icon={faUser} alt={''}/><br />
               Perfil
             </div>
           </li>

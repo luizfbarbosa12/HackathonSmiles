@@ -16,9 +16,6 @@ import {
   NumberOne,
   GreenBorder,
   NomePerfil,
-  CardIcon,
-  MoneyBagText,
-  PurpleArrow
 } from "./styles";
 import star from "../../assets/img/star 1.png";
 import profile from "../../assets/img/profile-pic.png";
@@ -31,7 +28,6 @@ import allInclusiveImage from '../../assets/img/all-inclusive.png'
 import breakfastImage from '../../assets/img/breakfast.png'
 import withoutMealImage from '../../assets/img/without-meal.png'
 import lunchImage from '../../assets/img/lunch.png'
-import purpleArrow from '../../assets/img/purpleArrow.png'
 
 const Remember = () => {
   return (
@@ -61,19 +57,19 @@ const Remember = () => {
         </LeftArrow>
         <WelcomeP>Você prefere qual tipo <br/> de pensão?</WelcomeP>
         <Card>
-          <img src={allInclusiveImage} />
+          <img src={allInclusiveImage} alt={''}/>
           <p>Café da manhã</p>
         </Card>
         <Card>
-          <img src={breakfastImage} />
+          <img src={breakfastImage} alt={''}/>
           <p>All inclusive</p>
         </Card>
         <Card>
-          <img src={withoutMealImage} />
+          <img src={withoutMealImage} alt={''}/>
           <p>Sem refeição</p>
         </Card>
         <Card>
-          <img src={lunchImage} />
+          <img src={lunchImage} alt={''}/>
           <p>Almoço</p>
         </Card>
         
