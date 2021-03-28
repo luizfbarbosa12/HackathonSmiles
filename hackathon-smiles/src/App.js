@@ -12,6 +12,7 @@ import MaxValue from './pages/MaxValue'
 import YouUseMiles from './pages/YouUseMiles'
 import Loading from "./pages/LoadingPage";
 import MissionComplete from './pages/MissionComplete'
+import YourTravels from './pages/YourTravels'
 
 import HotelSuggestions from './pages/HotelSuggestions'
 
@@ -68,6 +69,9 @@ function App() {
         </Route>
         <Route exact path="/mission-complete">
           <MissionComplete />
+        </Route>
+        <Route exact path="/your-travels">
+          <YourTravels />
         </Route>
       </Switch>
     </BrowserRouter>
