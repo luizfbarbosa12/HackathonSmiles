@@ -39,7 +39,7 @@ export const NomePerfil = styled.div`
 margin-right: 110px;
 color: #FFFFFF;
 font-size:24px;
-`; 
+`;
 
 export const ImagePng = styled.img`
   border-radius: 50%;
@@ -84,6 +84,7 @@ export const NumberOne = styled.img`
 export const LeftArrow = styled.div`
   position: relative;
   top: 0;
+  text-align: left;
   left: 5;
   z-index: 50;
   height: 12vh;
@@ -100,43 +101,26 @@ export const MainContainer = styled.main`
   z-index: 9;
   padding-top: 15px;
   padding-bottom: 70px;
+  text-align: center;
 `;
 
 export const WelcomeP = styled.p`
   text-align: center;
   font-size: 20px;
   color: #363636;
-  padding-top: 20px;
-  margin: 0 15px;
-`;
-
-export const Alerta = styled.div`
-  display: flex;
-  place-content: center;
-  text-align: center;
-  margin-top: 10px;
-`
-
-export const AlertIcon = styled.img`
-  margin: 0 10px 0 10px;
+  margin-bottom: 80px;
 `;
 
 export const Card = styled.div`
-  width: 283px;
-  height: 85px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #FCFCFC;
-  font-size: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+  margin: 5px 5px;
+
+  p{
+    font-size: 15px;
+  }
 `;
 
-export const CardIcon = styled.div`
-    margin-right: 10px;
-`
 export const MoneyBagText = styled.p`
     margin-right: 50px;
 `
