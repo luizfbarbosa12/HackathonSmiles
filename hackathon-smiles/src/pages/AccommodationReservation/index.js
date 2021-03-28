@@ -29,6 +29,10 @@ const Home = () => {
         history.replace('/rewards-list')
       }
 
+      const goToProfile = () => {
+        history.push("/your-travels")
+    }
+
     return (
         <div className="App">
             <PurpleBackground>
@@ -80,7 +84,7 @@ const Home = () => {
             Mapa
             </div>
                     </li>
-                    <li>
+                    <li onClick={goToProfile}>
                         <div className="options">
                             <FontAwesomeIcon icon={faUser} alt="faUser"/><br />
             Perfil
