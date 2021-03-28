@@ -21,7 +21,7 @@ const Home = () => {
     const history = useHistory();
 
     const goToHomepage = () => {
-        history.replace("/")
+        history.replace("/your-travels")
     }
 
     const voltar = () => {
@@ -51,7 +51,7 @@ const Home = () => {
             <Achievement>
                 <WelcomeP>Conquista desbloqueada!</WelcomeP>
                 <p className="nameAchievement">“O turista”</p>
-                <div className="button active cursorPointer"><p>Ver conquistas</p></div>
+                <div onClick={goToHomepage} className="button active cursorPointer"><p>Ver conquistas</p></div>
                 <div onClick={voltar} className="button cursorPointer">OK</div>
             </Achievement>
             <MainContainer>
