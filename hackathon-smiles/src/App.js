@@ -8,6 +8,7 @@ import YouWillTravel from "./pages/YouWillTravel";
 import WhichAccomodation from './pages/WhichAccomodation'
 import WhatKindOfPension from './pages/WhatKindOfPension'
 import MaxValue from './pages/MaxValue'
+import YouUseMiles from './pages/YouUseMiles'
 import Loading from "./pages/LoadingPage";
 
 
@@ -27,6 +28,7 @@ function App() {
      {/* <Remember/>
     //  <CompleteMissions/> */}
     {/* <WhichAccomodation/> */}
+    <YouUseMiles/>
     {/* <MaxValue/> */}
     <Loading/>
     </div>
