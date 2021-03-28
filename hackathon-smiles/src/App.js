@@ -10,6 +10,7 @@ import WhatKindOfPension from './pages/WhatKindOfPension'
 import MaxValue from './pages/MaxValue'
 import YouUseMiles from './pages/YouUseMiles'
 import Loading from "./pages/LoadingPage";
+import MissionComplete from './pages/MissionComplete'
 
 
 function App() {
@@ -28,9 +29,10 @@ function App() {
      {/* <Remember/>
     //  <CompleteMissions/> */}
     {/* <WhichAccomodation/> */}
-    <YouUseMiles/>
+    {/* <YouUseMiles/> */}
     {/* <MaxValue/> */}
-    <Loading/>
+    {/* <Loading/> */}
+    <MissionComplete/>
     </div>
   );
 }
