@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory, history } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -16,7 +17,7 @@ import {
   NumberOne,
   GreenBorder,
   NomePerfil,
-  
+
 } from "./styles";
 import star from "../../assets/img/star 1.png";
 import profile from "../../assets/img/profile-pic.png";
@@ -32,6 +33,17 @@ import withPartnerImage from '../../assets/img/with-partner.png'
 
 
 const Remember = () => {
+  const history = useHistory();
+
+
+
+
+  const voltar = () => {
+    history.replace("/remember")
+  }
+  const tipoAcomodacao = () => {
+    history.push("/which-accomodation")
+  }
   return (
     <div className="App">
       <PurpleBackground>
@@ -54,27 +66,27 @@ const Remember = () => {
         </GreenBorder>
       </PurpleBackground>
       <MainContainer>
-        <LeftArrow>
+        <LeftArrow className="cursorPointer" onClick={voltar}>
           <img src={arrow} alt={'arrow'} />
         </LeftArrow>
         <WelcomeP>Você vai viajar:</WelcomeP>
-        <Card>
-          <img src={aloneImage} alt={''}/>
+        <Card onClick={tipoAcomodacao} className="cursorPointer">
+          <img src={aloneImage} alt={''} />
           <p>Sozinho</p>
         </Card>
-        <Card>
-          <img src={withFriendsImage} alt={''}/>
+         <Card onClick={tipoAcomodacao} className="cursorPointer">
+          <img src={withFriendsImage} alt={''} />
           <p>Com amigos</p>
         </Card>
-        <Card>
-          <img src={withPartnerImage} alt={''}/>
+         <Card onClick={tipoAcomodacao} className="cursorPointer">
+          <img src={withPartnerImage} alt={''} />
           <p>Com parceira (o)</p>
         </Card>
-        <Card>
-          <img src={inFamilyImage} alt={''}/>
+         <Card onClick={tipoAcomodacao} className="cursorPointer">
+          <img src={inFamilyImage} alt={''} />
           <p>Em família</p>
         </Card>
-        
+
       </MainContainer>
       <Footer>
         <ul>

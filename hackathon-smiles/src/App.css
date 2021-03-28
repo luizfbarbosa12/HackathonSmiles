@@ -3,3 +3,7 @@
   margin: 0;
   font-family: 'Nunito', sans-serif;
 }
+
+.cursorPointer{
+  cursor: pointer;
+}

@@ -1,3 +1,4 @@
+import { useHistory, history } from "react-router-dom";
 import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Footer, MainImage, SignPost, ImagePng, NomePerfil, StarDiv, Card, CardImage, FrontOpacity, Achievement } from "./styles";
 import profile from "../../assets/img/profile-pic.png";
 import hat from "../../assets/img/hat.png";
@@ -17,6 +18,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 
 const Home = () => {
+    const history = useHistory();
+
+
+    const voltar = () => {
+        history.replace("/")
+    }
     return (
         <div className="App">
             <PurpleBackground>
@@ -41,8 +48,8 @@ const Home = () => {
             <Achievement>
                 <WelcomeP>Conquista desbloqueada!</WelcomeP>
                 <p className="nameAchievement">“O turista”</p>
-                <div className="button active"><p>Ver conquistas</p></div>
-                <div className="button">Sair</div>
+                <div className="button active cursorPointer"><p>Ver conquistas</p></div>
+                <div onClick={voltar} className="button cursorPointer">OK</div>
             </Achievement>
             <MainContainer>
                 <img className="arrow" src={arrow} alt={''} />

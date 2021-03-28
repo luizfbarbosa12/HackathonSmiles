@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory, history } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -31,6 +32,17 @@ import stars from '../../assets/img/stars.png'
 import closeButton from '../../assets/img/closeButton.png'
 
 const MissionComplete = () => {
+  const history = useHistory();
+
+
+
+
+  const voltar = () => {
+    history.replace("/")
+  }
+  const completeMission = () => {
+    history.push("/complete-missions-two")
+  }
     return (
         <div className="App">
       <PurpleBackground>
@@ -53,7 +65,7 @@ const MissionComplete = () => {
         </GreenBorder>
       </PurpleBackground>
       <MainContainer>
-        <CloseButton>
+        <CloseButton onClick={voltar} className="cursorPointer">
           <img src={closeButton} alt={'arrow'}/>
         </CloseButton>
         <WelcomeP>Missão completa</WelcomeP>
@@ -61,7 +73,7 @@ const MissionComplete = () => {
         <Descricao>
         <Pontos><strong>Você ganhou 100 pontos</strong></Pontos>
         <p>Você ganhou o DOBRO de pontos por ter fechado acomodação com a Smiles!</p>
-        <Continuar>Continuar</Continuar>
+        <Continuar onClick={completeMission} className="cursorPointer">Continuar</Continuar>
         </Descricao>
       </MainContainer>
       <Footer>

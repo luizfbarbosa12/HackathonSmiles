@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import { useHistory, history } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -24,9 +25,18 @@ import numberOne from "../../assets/img/numberOne.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 import menu from '../../assets/img/menu.png';
-import loading from '../../assets/img/loading.png';
+import loading from '../../assets/img/loading.gif';
 
 const Loading = () => {
+  const history = useHistory();
+
+
+  useEffect(() =>{
+    const redirect = setTimeout( () => {
+      history.push("/mission-complete")
+    }, 2000)
+  },[])
+  
     return (
         <div className="App">
       <PurpleBackground>

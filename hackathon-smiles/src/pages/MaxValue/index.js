@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory, history } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -17,7 +18,7 @@ import {
   NumberOne,
   Alerta,
   GreenBorder,
-  NomePerfil, 
+  NomePerfil,
   CardIcon,
   PurpleArrow
 } from "./styles";
@@ -32,8 +33,19 @@ import purpleArrow from '../../assets/img/purpleArrow.png'
 import alert from '../../assets/img/alert.png'
 
 const MaxValue = () => {
-    return (
-        <div className="App">
+  const history = useHistory();
+
+
+
+
+  const voltar = () => {
+    history.replace("/what-kind-of-pension")
+  }
+  const usaMilhas = () => {
+    history.push("/you-use-miles")
+  }
+  return (
+    <div className="App">
       <PurpleBackground>
         <TopBar>
           <ImagemPerfil>
@@ -44,18 +56,18 @@ const MaxValue = () => {
           </NomePerfil>
           <StarDiv>
             <div>
-              <StarImg src={star} alt={'star'}/>
+              <StarImg src={star} alt={'star'} />
             </div>
             <StarSpan>150</StarSpan>
           </StarDiv>
         </TopBar>
         <GreenBorder>
-          <Level><NumberOne src={numberOne} alt={'numberone'}/></Level>
+          <Level><NumberOne src={numberOne} alt={'numberone'} /></Level>
         </GreenBorder>
       </PurpleBackground>
       <MainContainer>
-        <LeftArrow>
-          <img src={arrow} alt={'arrow'}/>
+        <LeftArrow onClick={voltar} className="cursorPointer">
+          <img src={arrow} alt={'arrow'} />
         </LeftArrow>
         <WelcomeP>Valor máximo por diária:</WelcomeP>
         <Alerta>
@@ -66,66 +78,66 @@ const MaxValue = () => {
         </Alerta>
         <Card>
           <CardIcon>
-          <input type="radio" name="radio"/>
+            <input type="radio" name="radio" />
           </CardIcon>
           <p>Até R$ 80</p>
         </Card>
         <Card>
           <CardIcon>
-          <input type="radio" name="radio"/>
+            <input type="radio" name="radio" />
           </CardIcon>
           <p>Até R$ 100</p>
         </Card>
         <Card>
           <CardIcon>
-          <input type="radio" name="radio"/>
+            <input type="radio" name="radio" />
           </CardIcon>
           <p>Até R$ 250</p>
         </Card>
         <Card>
           <CardIcon>
-          <input type="radio" name="radio"/>
+            <input type="radio" name="radio" />
           </CardIcon>
           <p>Até R$ 500</p>
         </Card>
         <Card>
           <CardIcon>
-          <input type="radio" name="radio"/>
+            <input type="radio" name="radio" />
           </CardIcon>
           <p>Qualquer valor</p>
         </Card>
-        <PurpleArrow><img src={purpleArrow} alt={'arrow'}/></PurpleArrow>
+        <PurpleArrow onClick={usaMilhas} className="cursorPointer"><img src={purpleArrow} alt={'arrow'} /></PurpleArrow>
       </MainContainer>
       <Footer>
         <ul>
           <li>
             <div className="options">
-              <img width="13px" src={menu} alt={'icon'}/> <br />
+              <img width="13px" src={menu} alt={'icon'} /> <br />
               Fases
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faStar} alt={'icon'}/><br />
+              <FontAwesomeIcon icon={faStar} alt={'icon'} /><br />
               Prêmios
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faMap} alt={'icon'}/><br />
+              <FontAwesomeIcon icon={faMap} alt={'icon'} /><br />
               Mapa
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faUser} alt={'icon'}/><br />
+              <FontAwesomeIcon icon={faUser} alt={'icon'} /><br />
               Perfil
             </div>
           </li>
         </ul>
       </Footer>
     </div>
-    )
+  )
 }
 
 

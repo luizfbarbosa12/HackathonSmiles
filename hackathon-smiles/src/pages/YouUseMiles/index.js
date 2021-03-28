@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory, history } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -31,6 +32,17 @@ import PositiveImage from '../../assets/img/positive-vote.png'
 import negativeImage from '../../assets/img/negative-vote.png'
 
 const Remember = () => {
+  const history = useHistory();
+
+
+
+
+  const voltar = () => {
+    history.replace("/max-value")
+  }
+  const hotelSugestao = () => {
+    history.push("/hotel-suggestions")
+  }
   return (
     <div className="App">
       <PurpleBackground>
@@ -53,11 +65,11 @@ const Remember = () => {
         </GreenBorder>
       </PurpleBackground>
       <MainContainer>
-        <LeftArrow>
+      <LeftArrow className="cursorPointer" onClick={voltar}>
           <img src={arrow} alt={'arrow'} />
         </LeftArrow>
         <WelcomeP>Vai utilizar milhas<br/>nas diárias?</WelcomeP>
-        <Card>
+        <Card onClick={hotelSugestao} className="cursorPointer">
           <img src={PositiveImage} />
           <p>Sim</p>
         </Card>

@@ -1,3 +1,4 @@
+import {useHistory, history} from "react-router-dom";
 import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Footer, MainImage, MainText, SignPost, ImagePng, NomePerfil, StarDiv, WhiteBorder, SignPostImage } from "./styles";
 import profile from "../../assets/img/profile-pic.png";
 import signpost from "../../assets/img/signpost.png";
@@ -12,6 +13,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 
 const Home = () => {
+    const history = useHistory();
+    const voltar = ()=>{
+        history.replace("/choices")
+      } 
+      const completeMissao = ()=>{
+        history.push("/complete-missions")
+      } 
     return (
         <div className="App">
             <PurpleBackground>
@@ -34,14 +42,14 @@ const Home = () => {
                 </WhiteBorder>
             </PurpleBackground>
             <MainContainer>
-                <img className="arrow" src={arrow} alt="arrow"/>
+                <img onClick={voltar} className="arrow cursorPointer" src={arrow} alt="arrow"/>
                 <WelcomeP>Reserva de hospedagem</WelcomeP>
                 <MainImage width="196.73px" src={imageReservation} alt="reservation"/>
                 <MainText>
                     Nessa etapa, vamos te ajudar a encontrar qual tipo de hospedagem é mais a sua cara e não deixar você esquecer de nada importante.
                 </MainText>
                 <div className="button"><p>Já encontrei</p></div>
-                <div className="button active">Vamos!</div>
+                <div onClick={completeMissao} className="button active cursorPointer">Vamos!</div>
             </MainContainer>
             <Footer>
                 <ul>

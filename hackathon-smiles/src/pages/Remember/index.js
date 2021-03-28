@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory, history } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -35,6 +36,16 @@ import flatMap from '../../assets/img/flatMap.png'
 import purpleArrow from '../../assets/img/purpleArrow.png'
 
 const Remember = () => {
+  const history = useHistory();
+
+
+
+    const voltar = () => {
+        history.replace("/complete-missions")
+    }
+    const voceViajar = () => {
+        history.push("/you-will-travel")
+    }
     return (
         <div className="App">
       <PurpleBackground>
@@ -57,7 +68,7 @@ const Remember = () => {
         </GreenBorder>
       </PurpleBackground>
       <MainContainer>
-        <LeftArrow>
+        <LeftArrow onClick={voltar} className="cursorPointer">
           <img src={arrow} alt={'arrow'}/>
         </LeftArrow>
         <WelcomeP>Lembre-se de:</WelcomeP>
@@ -91,7 +102,7 @@ const Remember = () => {
           </CardIcon>
           <p>Considere as avaliações dos outros hóspedes.</p>
         </Card>
-        <PurpleArrow><img src={purpleArrow} alt={'arrow'}/></PurpleArrow>
+        <PurpleArrow onClick={voceViajar} className="cursorPointer"><img src={purpleArrow} alt={'arrow'}/></PurpleArrow>
       </MainContainer>
       <Footer>
         <ul>
