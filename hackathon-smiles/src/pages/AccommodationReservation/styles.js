@@ -48,6 +48,20 @@ export const ImagePng = styled.img`
   height: 41px;
 `;
 export const SignPost = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+`
+export const StarImg = styled.img`
+    margin-right: 5px;
+`
+
+export const StarSpan = styled.span`
+    color: #F4F2F2;
+`
+
+export const ImagemPerfil = styled.div`
     position: absolute;
     left: 25%;
     right: 25%;

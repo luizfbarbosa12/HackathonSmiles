@@ -1,6 +1,7 @@
 import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Footer, MainImage, MainText, SignPost, ImagePng, NomePerfil, StarDiv } from "./styles";
 import profile from "../../assets/img/profile-pic.png";
 import signpost from "../../assets/img/signpost.png";
+
 import arrow from '../../assets/img/arrow.png';
 import imageReservation from '../../assets/img/reservation.png';
 import star from '../../assets/img/star 1.png';
