@@ -27,6 +27,10 @@ const Home = () => {
         history.replace('/rewards-list')
       }
 
+      const goToProfile = () => {
+        history.push("/your-travels")
+      }
+
     const voltar = () => {
         history.replace("/accommodation-reservation")
     }
@@ -117,7 +121,7 @@ const Home = () => {
             Mapa
             </div>
                     </li>
-                    <li>
+                    <li onClick={goToProfile}>
                         <div className="options">
                             <FontAwesomeIcon icon={faUser} alt={''} /><br />
             Perfil

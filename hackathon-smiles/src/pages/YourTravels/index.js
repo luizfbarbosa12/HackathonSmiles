@@ -13,12 +13,7 @@ import check from '../../assets/img/check.png';
 import cadeado from '../../assets/img/cadeado.png';
 import hat from '../../assets/img/hat.png';
 
-import oneImage from '../../assets/img/1.png';
-import twoImage from '../../assets/img/2.png';
-import threeImage from '../../assets/img/3.png';
-import forImage from '../../assets/img/4.png';
-import fiveImage from '../../assets/img/5.png';
-import sixImage from '../../assets/img/6.png';
+
 import menu from '../../assets/img/menu.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
@@ -34,6 +29,15 @@ const YourTravels = () => {
         history.replace("/mission-complete")
     }
 
+    const goToHomepage = () => {
+        history.replace("/")
+    }
+
+    const goToProfile = () => {
+        history.push("/your-travels")
+    }
+
+    
     return (
         <div className="App">
             <PurpleBackground>
@@ -137,7 +141,7 @@ const YourTravels = () => {
             </MainContainer>
             <Footer>
                 <ul>
-                    <li>
+                    <li onClick={goToHomepage}>
                         <div className="options">
                             <img width="13px" src={menu} alt={''} /> <br />
             Fases
@@ -155,7 +159,7 @@ const YourTravels = () => {
             Mapa
             </div>
                     </li>
-                    <li>
+                    <li onClick={goToProfile}>
                         <div className="options">
                             <FontAwesomeIcon icon={faUser} alt={''} /><br />
             Perfil

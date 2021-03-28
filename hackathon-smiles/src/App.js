@@ -71,6 +71,10 @@ function App() {
         <Route exact path="/rewards-list">
           <RewardsList />
         </Route>
+        <Route exact path="/your-travels">
+          <YourTravels />
+        </Route>
+
       </Switch>
     </BrowserRouter>
   );

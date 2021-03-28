@@ -46,6 +46,10 @@ const goToRewardsList = () => {
   history.replace('/rewards-list')
 }
 
+const goToProfile = () => {
+  history.push("/your-travels")
+}
+
     const voltar = () => {
         history.replace("/complete-missions")
     }
@@ -130,7 +134,7 @@ const goToRewardsList = () => {
               Mapa
             </div>
           </li>
-          <li>
+          <li onClick={goToProfile}>
             <div className="options">
               <FontAwesomeIcon icon={faUser} alt={'icon'}/><br />
               Perfil

@@ -28,6 +28,11 @@ const CompleteMissionsTwo = () => {
     const goToRewardsList = () => {
         history.replace('/rewards-list')
       }
+
+      const goToProfile = () => {
+        history.push("/your-travels")
+      }
+
     useEffect(() => {
         setTimeout(() => {
             history.push("/achievement-unlocked")
@@ -123,7 +128,7 @@ const CompleteMissionsTwo = () => {
             Mapa
             </div>
                     </li>
-                    <li>
+                    <li onClick={goToProfile}>
                         <div className="options">
                             <FontAwesomeIcon icon={faUser} alt={''} /><br />
             Perfil
