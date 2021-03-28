@@ -113,7 +113,7 @@ export const WelcomeP = styled.p`
 export const Alerta = styled.div`
   display: flex;
   place-content: center;
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
 `
 
@@ -136,9 +136,6 @@ export const Card = styled.div`
 
 export const CardIcon = styled.div`
     margin-right: 10px;
-`
-export const MoneyBagText = styled.p`
-    margin-right: 50px;
 `
 
 export const CardImage = styled.img`
