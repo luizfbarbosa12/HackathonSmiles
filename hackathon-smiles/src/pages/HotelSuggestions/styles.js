@@ -93,7 +93,7 @@ export const MainContainer = styled.main`
   width: 85vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -50px;
+  margin-top: -80px;
   border-radius: 26px;
   z-index: 9;
   padding-top: 15px;
