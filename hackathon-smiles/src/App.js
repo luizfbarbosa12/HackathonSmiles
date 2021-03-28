@@ -12,6 +12,8 @@ import YouUseMiles from './pages/YouUseMiles'
 import Loading from "./pages/LoadingPage";
 import MissionComplete from './pages/MissionComplete'
 import CompleteMissionsTwo from './pages/CompleteMissionsTwo'
+import AchievementUnlocked from './pages/AchievementUnlocked'
+
 
 
 function App() {
@@ -33,7 +35,7 @@ function App() {
     {/* <YouUseMiles/> */}
     {/* <MaxValue/> */}
     {/* <Loading/> */}
-    <CompleteMissionsTwo/>
+    <AchievementUnlocked/>
     </div>
   );
 }
