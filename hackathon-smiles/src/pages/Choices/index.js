@@ -41,10 +41,13 @@ const goToRewardsList = () => {
   history.replace('/rewards-list')
 }
 
-const goToProfile = () => {
-  history.push("/your-travels")
-}
+   const goToProfile = () => {
+        history.push("/your-travels")
+    }     
 
+const goToMap = () => {
+        history.replace("/map")
+    }
   const voltar = ()=>{
     history.replace("/")
   } 
@@ -106,7 +109,7 @@ const goToProfile = () => {
               Prêmios
             </div>
           </li>
-          <li>
+          <li onClick={goToMap}>
             <div className="options">
               <FontAwesomeIcon icon={faMap} alt={''}/><br />
               Mapa

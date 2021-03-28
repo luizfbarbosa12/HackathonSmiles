@@ -40,10 +40,13 @@ const MaxValue = () => {
     history.replace("/")
 }
 
-const goToProfile = () => {
-  history.push("/your-travels")
-}
+   const goToProfile = () => {
+        history.push("/your-travels")
+    }     
 
+const goToMap = () => {
+        history.replace("/map")
+    }
 const goToRewardsList = () => {
   history.replace('/rewards-list')
 }
