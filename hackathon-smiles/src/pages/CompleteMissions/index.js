@@ -13,7 +13,6 @@ import fiveImage from '../../assets/img/5.png';
 import sixImage from '../../assets/img/6.png';
 import menu from '../../assets/img/menu.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBorderAll } from '@fortawesome/free-solid-svg-icons'
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 
 const Home = () => {
@@ -22,88 +21,88 @@ const Home = () => {
             <PurpleBackground>
                 <TopBar>
                     <ImagemPerfil>
-                        <ImagePng src={profile} />
+                        <ImagePng src={profile} alt={''}/>
                     </ImagemPerfil>
                     <NomePerfil>
                         Maria
                     </NomePerfil>
                     <StarDiv>
                         <div>
-                            <StarImg src={star} />
+                            <StarImg src={star} alt={''}/>
                         </div>
                         <StarSpan>150</StarSpan>
                     </StarDiv>
                 </TopBar>
                 <SignPost>
-                    <img src={signpost} />
+                    <img src={signpost} alt={''}/>
                 </SignPost>
             </PurpleBackground>
             <MainContainer>
-                <img className="arrow" src={arrow} />
+                <img className="arrow" src={arrow} alt={''}/>
                 <WelcomeP>Complete as missões</WelcomeP>
                 <div>
-                    <MainImage width="196.73px" src={progressBar} />
+                    <MainImage width="196.73px" src={progressBar} alt={''}/>
                 </div>
                 <Card>
                     <div className="border-left-card-first">
-                        <CardImage src={oneImage} />
+                        <CardImage src={oneImage} alt={''}/>
                     </div>
-                    <p className="color-text-card-first"><StarImg width="20px" src={star} /> 50 pontos</p>
+                    <p className="color-text-card-first"><StarImg width="20px" src={star} alt={''}/> 50 pontos</p>
                 </Card>
                 <Card>
                     <div className="border-left-card-second">
-                        <CardImage src={twoImage} />
+                        <CardImage src={twoImage} alt={''}/>
                     </div>
-                    <p className="color-text-card-second"><StarImg width="20px" src={star} /> 50 pontos</p>
+                    <p className="color-text-card-second"><StarImg width="20px" src={star} alt={''}/> 50 pontos</p>
                 </Card>
                 <Card>
                     <div className="border-left-card-third">
-                        <CardImage src={threeImage} />
+                        <CardImage src={threeImage} alt={''}/>
                     </div>
-                    <p className="color-text-card-third"><StarImg width="20px" src={star} /> 50 pontos</p>
+                    <p className="color-text-card-third"><StarImg width="20px" src={star} alt={''}/> 50 pontos</p>
                 </Card>
                 <Card>
                     <div className="border-left-card-fourth">
-                        <CardImage src={forImage} />
+                        <CardImage src={forImage} alt={''}/>
                     </div>
-                    <p className="color-text-card-fourth"><StarImg width="20px" src={star} /> 50 pontos</p>
+                    <p className="color-text-card-fourth"><StarImg width="20px" src={star} alt={''}/> 50 pontos</p>
                 </Card>
                 <Card>
                     <div className="border-left-card-fifth">
-                        <CardImage src={fiveImage} />
+                        <CardImage src={fiveImage} alt={''}/>
                     </div>
-                    <p className="color-text-card-fifth"><StarImg width="20px" src={star} /> 50 pontos</p>
+                    <p className="color-text-card-fifth"><StarImg width="20px" src={star} alt={''}/> 50 pontos</p>
                 </Card>
                 <Card>
                     <div className="border-left-card-sixth">
-                        <CardImage src={sixImage} />
+                        <CardImage src={sixImage} alt={''}/>
                     </div>
-                    <p className="color-text-card-sixth"><StarImg width="20px" src={star} /> 50 pontos</p>
+                    <p className="color-text-card-sixth"><StarImg width="20px" src={star} alt={''}/> 50 pontos</p>
                 </Card>
             </MainContainer>
             <Footer>
                 <ul>
                     <li>
                         <div className="options">
-                            <img width="13px" src={menu} /> <br />
+                            <img width="13px" src={menu} alt={''}/> <br />
             Fases
             </div>
                     </li>
                     <li>
                         <div className="options">
-                            <FontAwesomeIcon icon={faStar} /><br />
+                            <FontAwesomeIcon icon={faStar} alt={''}/><br />
               Prêmios
             </div>
                     </li>
                     <li>
                         <div className="options">
-                            <FontAwesomeIcon icon={faMap} /><br />
+                            <FontAwesomeIcon icon={faMap} alt={''}/><br />
             Mapa
             </div>
                     </li>
                     <li>
                         <div className="options">
-                            <FontAwesomeIcon icon={faUser} /><br />
+                            <FontAwesomeIcon icon={faUser} alt={''}/><br />
             Perfil
             </div>
                     </li>
