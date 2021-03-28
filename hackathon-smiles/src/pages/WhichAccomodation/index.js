@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory, history } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -29,6 +30,17 @@ import menu from '../../assets/img/menu.png';
 import purpleArrow from '../../assets/img/purpleArrow.png'
 
 const WhichAccomodation = () => {
+  const history = useHistory();
+
+
+
+
+  const voltar = () => {
+    history.replace("/you-will-travel")
+  }
+  const tipoPensao = () => {
+    history.push("/what-kind-of-pension")
+  }
     return (
         <div className="App">
       <PurpleBackground>
@@ -51,7 +63,7 @@ const WhichAccomodation = () => {
         </GreenBorder>
       </PurpleBackground>
       <MainContainer>
-        <LeftArrow>
+      <LeftArrow className="cursorPointer" onClick={voltar}>
           <img src={arrow} alt={'arrow'}/>
         </LeftArrow>
         <WelcomeP>Qual tipo de acomodação você vai escolher?</WelcomeP>
@@ -85,7 +97,7 @@ const WhichAccomodation = () => {
           </CardIcon>
           <p>Chalés</p>
         </Card>
-        <PurpleArrow><img src={purpleArrow} alt={'arrow'}/></PurpleArrow>
+        <PurpleArrow onClick={tipoPensao} className="cursorPointer"><img src={purpleArrow} alt={'arrow'}/></PurpleArrow>
       </MainContainer>
       <Footer>
         <ul>

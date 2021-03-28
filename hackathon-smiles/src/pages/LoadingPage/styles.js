@@ -125,6 +125,10 @@ export const LoadingIcon = styled.div`
   display: flex;
   place-content: center;
   place-items: center;
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 70px;
+  height:70px;
 `
 
 export const Footer = styled.footer`

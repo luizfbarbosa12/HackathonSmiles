@@ -78,6 +78,7 @@ export const LeftArrow = styled.div`
   z-index: 50;
   height: 12vh;
   padding-left: 15px;
+  cursor: pointer;
 `;
 
 export const MainContainer = styled.main`

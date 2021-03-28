@@ -1,4 +1,5 @@
 import "./App.css";
+import { Switch, Route, BrowserRouter } from "react-router-dom"
 import AccommodationReservation from "./pages/AccommodationReservation"
 import CompleteMissions from "./pages/CompleteMissions"
 import Home from "./pages/Home/home"
@@ -13,7 +14,7 @@ import Loading from "./pages/LoadingPage";
 import MissionComplete from './pages/MissionComplete'
 
 import HotelSuggestions from './pages/HotelSuggestions'
- 
+
 import CompleteMissionsTwo from './pages/CompleteMissionsTwo'
 import AchievementUnlocked from './pages/AchievementUnlocked'
 
@@ -21,30 +22,55 @@ import AchievementUnlocked from './pages/AchievementUnlocked'
 
 function App() {
   return (
-    <div className="App">
-     {/* <Home/> */}
-     {/* <AccommodationReservation/> */}
-     {/* <Choices/> */}
-     {/* <Remember/> */}
-     {/* <CompleteMissions/> */}
-     {/* <WhatKindOfPension/> */}
-     {/* <Remember/>
-    //  <CompleteMissions/> */}
-    {/* <WhichAccomodation/> */}
-     {/* <YouWillTravel/> */}
-     {/* <Remember/>
-    //  <CompleteMissions/> */}
-    {/* <WhichAccomodation/> */}
-    {/* <YouUseMiles/> */}
-    {/* <MaxValue/> */}
-    {/* <Loading/> */}
-    <AchievementUnlocked/>
-
-    {/* <MissionComplete/> */}
-    <HotelSuggestions/>
-
-    <CompleteMissionsTwo/>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/accommodation-reservation">
+          <AccommodationReservation />
+        </Route>
+        <Route exact path="/choices">
+          <Choices />
+        </Route>
+        <Route exact path="/remember">
+          <Remember />
+        </Route>
+        <Route exact path="/complete-missions">
+          <CompleteMissions />
+        </Route>
+        <Route exact path="/what-kind-of-pension">
+          <WhatKindOfPension />
+        </Route>
+        <Route exact path="/which-accomodation">
+          <WhichAccomodation />
+        </Route>
+        <Route exact path="/you-will-travel">
+          <YouWillTravel />
+        </Route>
+        <Route exact path="/you-use-miles">
+          <YouUseMiles />
+        </Route>
+        <Route exact path="/max-value">
+          <MaxValue />
+        </Route>
+        <Route exact path="/loading">
+          <Loading />
+        </Route>
+        <Route exact path="/achievement-unlocked">
+          <AchievementUnlocked />
+        </Route>
+        <Route exact path="/hotel-suggestions">
+          <HotelSuggestions />
+        </Route>
+        <Route exact path="/complete-missions-two">
+          <CompleteMissionsTwo />
+        </Route>
+        <Route exact path="/mission-complete">
+          <MissionComplete />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 

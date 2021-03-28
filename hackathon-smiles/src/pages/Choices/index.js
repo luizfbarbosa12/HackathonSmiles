@@ -1,4 +1,5 @@
 import React from "react";
+import {useHistory, history} from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -30,6 +31,17 @@ import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 import menu from '../../assets/img/menu.png';
 
 const Escolhas = () => {
+  const history = useHistory();
+
+
+
+
+  const voltar = ()=>{
+    history.replace("/")
+  } 
+  const compraHospedagem = ()=>{
+    history.push("/accommodation-reservation")
+  } 
   return (
     <div className="App">
       <PurpleBackground>
@@ -52,7 +64,7 @@ const Escolhas = () => {
         </WhiteBorder>
       </PurpleBackground>
       <MainContainer>
-        <LeftArrow>
+        <LeftArrow onClick={voltar}>
           <img src={arrow} alt={''}/>
         </LeftArrow>
         <WelcomeP>Escolhas</WelcomeP>
@@ -63,11 +75,11 @@ const Escolhas = () => {
           <p>Compra de Passagem</p>
           <div><img src={check} alt={''}/></div>
         </Card>
-        <Card>
+        <Card className="cursorPointer" onClick={compraHospedagem}>
           <div>
             <img src={notebook} alt={''}/>
           </div>
-          <p>Compra de Passagem</p>
+          <p>Reserva de hospedagem</p>
           <div><img src={rightArrow} alt={''}/></div>
         </Card>
       </MainContainer>

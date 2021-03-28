@@ -1,3 +1,4 @@
+import {useHistory, history} from "react-router-dom";
 import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Card, CardImage, Footer } from "./styles";
 import profile from '../../assets/img/profile-pic.png';
 import star from '../../assets/img/star 1.png';
@@ -13,6 +14,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 
 const Home = () => {
+  const history = useHistory();
+
+
+
+
+  const escolhas = ()=>{
+    history.push("/choices")
+  }
+  
   return (
     <div className="App">
       <PurpleBackground>
@@ -32,7 +42,7 @@ const Home = () => {
           </div>
           <p className="color-text-card-first">Definição</p>
         </Card>
-        <Card>
+        <Card onClick={escolhas}>
           <div className="border-left-card-second">
             <CardImage src={profileSignPost} alt={''}/>
           </div>

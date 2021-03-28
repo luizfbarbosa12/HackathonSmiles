@@ -1,4 +1,5 @@
 import React from 'react'
+import {useHistory, history} from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -30,6 +31,17 @@ import withoutMealImage from '../../assets/img/without-meal.png'
 import lunchImage from '../../assets/img/lunch.png'
 
 const Remember = () => {
+  const history = useHistory();
+
+
+
+
+  const voltar = ()=>{
+    history.replace("/which-accomodation")
+  } 
+  const valorMaximo = ()=>{
+    history.push("/max-value")
+  } 
   return (
     <div className="App">
       <PurpleBackground>
@@ -52,23 +64,23 @@ const Remember = () => {
         </GreenBorder>
       </PurpleBackground>
       <MainContainer>
-        <LeftArrow>
+        <LeftArrow onClick={voltar} className="cursorPointer">
           <img src={arrow} alt={'arrow'} />
         </LeftArrow>
         <WelcomeP>Você prefere qual tipo <br/> de pensão?</WelcomeP>
-        <Card>
+        <Card onClick={valorMaximo} className="cursorPointer"> 
           <img src={allInclusiveImage} alt={''}/>
           <p>Café da manhã</p>
         </Card>
-        <Card>
+        <Card onClick={valorMaximo} className="cursorPointer"> 
           <img src={breakfastImage} alt={''}/>
           <p>All inclusive</p>
         </Card>
-        <Card>
+        <Card onClick={valorMaximo} className="cursorPointer"> 
           <img src={withoutMealImage} alt={''}/>
           <p>Sem refeição</p>
         </Card>
-        <Card>
+        <Card onClick={valorMaximo} className="cursorPointer"> 
           <img src={lunchImage} alt={''}/>
           <p>Almoço</p>
         </Card>
