@@ -25,6 +25,10 @@ const Home = () => {
         history.replace("/")
     }
 
+    const goToRewardsList = () => {
+        history.replace('/rewards-list')
+      }
+
     return (
         <div className="App">
             <PurpleBackground>
@@ -64,7 +68,7 @@ const Home = () => {
             Fases
             </div>
                     </li>
-                    <li>
+                    <li onClick={goToRewardsList}>
                         <div className="options">
                             <FontAwesomeIcon icon={faStar} alt="faStar"/><br />
               Prêmios

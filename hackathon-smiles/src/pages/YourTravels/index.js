@@ -26,7 +26,9 @@ import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 const YourTravels = () => {
     const history = useHistory();
 
-
+    const goToRewardsList = () => {
+        history.replace('/rewards-list')
+      }
 
     const voltar = () => {
         history.replace("/mission-complete")
@@ -141,7 +143,7 @@ const YourTravels = () => {
             Fases
             </div>
                     </li>
-                    <li>
+                    <li onClick={goToRewardsList}>
                         <div className="options">
                             <FontAwesomeIcon icon={faStar} alt={''} /><br />
               Prêmios

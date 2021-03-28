@@ -20,6 +20,10 @@ const Home = () => {
     history.replace("/")
 }
 
+const goToRewardsList = () => {
+  history.replace('/rewards-list')
+}
+
 
   const escolhas = ()=>{
     history.push("/choices")
@@ -83,7 +87,7 @@ const Home = () => {
             Fases
             </div>
           </li>
-          <li>
+          <li onClick={goToRewardsList}>
             <div className="options">
               <FontAwesomeIcon icon={faStar} alt={''}/><br />
               Prêmios

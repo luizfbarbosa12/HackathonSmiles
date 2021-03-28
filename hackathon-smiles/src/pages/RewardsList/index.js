@@ -47,9 +47,11 @@ const RewardsList = () => {
     const goToHomepage = () => {
         history.replace("/")
     }
-    const voceViajar = () => {
-        // history.push("/you-will-travel")
+   
+    const goToRewardsList = () => {
+      history.replace('/rewards-list')
     }
+
     return (
         <div className="App">
       <PurpleBackground>
@@ -173,7 +175,7 @@ const RewardsList = () => {
               Fases
             </div>
           </li>
-          <li>
+          <li onClick={goToRewardsList}>
             <div className="options">
               <FontAwesomeIcon icon={faStar} alt={'icon'}/><br />
               Prêmios

@@ -40,6 +40,9 @@ const MaxValue = () => {
     history.replace("/")
 }
 
+const goToRewardsList = () => {
+  history.replace('/rewards-list')
+}
   const voltar = () => {
     history.replace("/what-kind-of-pension")
   }
@@ -118,7 +121,7 @@ const MaxValue = () => {
               Fases
             </div>
           </li>
-          <li>
+          <li onClick={goToRewardsList}>
             <div className="options">
               <FontAwesomeIcon icon={faStar} alt={'icon'} /><br />
               Prêmios

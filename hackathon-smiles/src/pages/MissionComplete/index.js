@@ -38,6 +38,9 @@ const MissionComplete = () => {
     history.replace("/")
 }
 
+const goToRewardsList = () => {
+  history.replace('/rewards-list')
+}
 
   const voltar = () => {
     history.replace("/")
@@ -86,7 +89,7 @@ const MissionComplete = () => {
               Fases
             </div>
           </li>
-          <li>
+          <li onClick={goToRewardsList}>
             <div className="options">
               <FontAwesomeIcon icon={faStar} alt={'icon'}/><br />
               Prêmios

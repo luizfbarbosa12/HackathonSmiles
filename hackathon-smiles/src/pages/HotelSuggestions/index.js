@@ -50,6 +50,9 @@ const HotelSuggestions = () => {
     history.replace("/")
 }
 
+const goToRewardsList = () => {
+  history.replace('/rewards-list')
+}
 
   const voltar = () => {
     history.replace("/you-use-miles")
@@ -133,7 +136,7 @@ const HotelSuggestions = () => {
               Fases
             </div>
           </li>
-          <li>
+          <li onClick={goToRewardsList}>
             <div className="options">
               <FontAwesomeIcon icon={faStar} alt={'icon'} /><br />
               Prêmios

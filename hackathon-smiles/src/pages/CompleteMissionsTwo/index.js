@@ -25,6 +25,9 @@ const CompleteMissionsTwo = () => {
         history.replace("/")
     }
 
+    const goToRewardsList = () => {
+        history.replace('/rewards-list')
+      }
     useEffect(() => {
         setTimeout(() => {
             history.push("/achievement-unlocked")
@@ -108,7 +111,7 @@ const CompleteMissionsTwo = () => {
             Fases
             </div>
                     </li>
-                    <li>
+                    <li onClick={goToRewardsList}>
                         <div className="options">
                             <FontAwesomeIcon icon={faStar} alt={''} /><br />
               Prêmios

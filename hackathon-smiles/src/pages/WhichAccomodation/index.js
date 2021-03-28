@@ -36,6 +36,9 @@ const WhichAccomodation = () => {
     history.replace("/")
 }
 
+const goToRewardsList = () => {
+  history.replace('/rewards-list')
+}
 
   const voltar = () => {
     history.replace("/you-will-travel")
@@ -109,7 +112,7 @@ const WhichAccomodation = () => {
               Fases
             </div>
           </li>
-          <li>
+          <li onClick={goToRewardsList}>
             <div className="options">
               <FontAwesomeIcon icon={faStar} alt={'icon'}/><br />
               Prêmios

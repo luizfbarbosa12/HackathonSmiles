@@ -12,11 +12,7 @@ import MaxValue from './pages/MaxValue'
 import YouUseMiles from './pages/YouUseMiles'
 import Loading from "./pages/LoadingPage";
 import MissionComplete from './pages/MissionComplete'
-<<<<<<< HEAD
-=======
 import YourTravels from './pages/YourTravels'
-
->>>>>>> 47271f0f4200608418373cbc0a19898fc477cc02
 import HotelSuggestions from './pages/HotelSuggestions'
 import CompleteMissionsTwo from './pages/CompleteMissionsTwo'
 import AchievementUnlocked from './pages/AchievementUnlocked'

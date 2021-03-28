@@ -37,6 +37,9 @@ const Escolhas = () => {
     history.replace("/")
 }
 
+const goToRewardsList = () => {
+  history.replace('/rewards-list')
+}
 
   const voltar = ()=>{
     history.replace("/")
@@ -93,7 +96,7 @@ const Escolhas = () => {
               Fases
             </div>
           </li>
-          <li>
+          <li onClick={goToRewardsList}>
             <div className="options">
               <FontAwesomeIcon icon={faStar} alt={''}/><br />
               Prêmios
