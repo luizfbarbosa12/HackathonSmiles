@@ -15,7 +15,7 @@ import {
   Level,
   NumberOne,
   GreenBorder,
-  NomePerfil, 
+  NomePerfil,
   CardIcon,
   MoneyBagText,
   PurpleArrow
@@ -27,16 +27,15 @@ import numberOne from "../../assets/img/numberOne.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 import menu from '../../assets/img/menu.png';
-import hotel from '../../assets/img/hotel.png'
-import clock from '../../assets/img/clock.png'
-import notebookAndPencil from '../../assets/img/notebookAndPencil.png'
-import moneyBag from '../../assets/img/moneyBag.png'
-import flatMap from '../../assets/img/flatMap.png'
+import aloneImage from '../../assets/img/Alone.png'
+import inFamilyImage from '../../assets/img/in-family.png'
+import withFriendsImage from '../../assets/img/with-friends.png'
+import withPartnerImage from '../../assets/img/with-partner.png'
 import purpleArrow from '../../assets/img/purpleArrow.png'
 
 const Remember = () => {
-    return (
-        <div className="App">
+  return (
+    <div className="App">
       <PurpleBackground>
         <TopBar>
           <ImagemPerfil>
@@ -47,82 +46,68 @@ const Remember = () => {
           </NomePerfil>
           <StarDiv>
             <div>
-              <StarImg src={star} alt={'star'}/>
+              <StarImg src={star} alt={'star'} />
             </div>
             <StarSpan>150</StarSpan>
           </StarDiv>
         </TopBar>
         <GreenBorder>
-          <Level><NumberOne src={numberOne} alt={'numberone'}/></Level>
+          <Level><NumberOne src={numberOne} alt={'numberone'} /></Level>
         </GreenBorder>
       </PurpleBackground>
       <MainContainer>
         <LeftArrow>
-          <img src={arrow} alt={'arrow'}/>
+          <img src={arrow} alt={'arrow'} />
         </LeftArrow>
-        <WelcomeP>Lembre-se de:</WelcomeP>
+        <WelcomeP>Você vai viajar:</WelcomeP>
         <Card>
-          <CardIcon>
-            <img src={clock} alt={'clock'}/>
-          </CardIcon>
-          <p>Verificar o horário de check-in e check-out do hotel.</p>
+          <img src={aloneImage} />
+          <p>Sozinho</p>
         </Card>
         <Card>
-          <CardIcon>
-            <img src={moneyBag} alt={'moneybag'}/>
-          </CardIcon>
-           <MoneyBagText>Fique atento às taxas extras.</MoneyBagText> 
+          <img src={withFriendsImage} />
+          <p>Com amigos</p>
         </Card>
         <Card>
-          <CardIcon>
-            <img src={flatMap} alt={'map'}/>
-          </CardIcon>
-          <p>Veja se tem todas as comodidades que você quer.</p>
+          <img src={withPartnerImage} />
+          <p>Com parceira (o)</p>
         </Card>
         <Card>
-          <CardIcon>
-            <img src={notebookAndPencil} alt={'ntbpencil'}/>
-          </CardIcon>
-          <p>Verifique a distância dos lugares que você quer visitar.</p>
+          <img src={inFamilyImage} />
+          <p>Em família</p>
         </Card>
-        <Card>
-          <CardIcon>
-            <img src={hotel} alt={'hoteç'}/>
-          </CardIcon>
-          <p>Considere as avaliações dos outros hóspedes.</p>
-        </Card>
-        <PurpleArrow><img src={purpleArrow} alt={'arrow'}/></PurpleArrow>
+        
       </MainContainer>
       <Footer>
         <ul>
           <li>
             <div className="options">
-              <img width="13px" src={menu} alt={'icon'}/> <br />
+              <img width="13px" src={menu} alt={'icon'} /> <br />
               Fases
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faStar} alt={'icon'}/><br />
+              <FontAwesomeIcon icon={faStar} alt={'icon'} /><br />
               Prêmios
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faMap} alt={'icon'}/><br />
+              <FontAwesomeIcon icon={faMap} alt={'icon'} /><br />
               Mapa
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faUser} alt={'icon'}/><br />
+              <FontAwesomeIcon icon={faUser} alt={'icon'} /><br />
               Perfil
             </div>
           </li>
         </ul>
       </Footer>
     </div>
-    )
+  )
 }
 
 

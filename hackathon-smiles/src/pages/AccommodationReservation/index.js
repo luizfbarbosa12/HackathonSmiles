@@ -1,4 +1,4 @@
-import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Footer, MainImage, MainText, SignPost, ImagePng, NomePerfil, StarDiv } from "./styles";
+import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Footer, MainImage, MainText, SignPost, ImagePng, NomePerfil, StarDiv, WhiteBorder, SignPostImage } from "./styles";
 import profile from "../../assets/img/profile-pic.png";
 import signpost from "../../assets/img/signpost.png";
 
@@ -35,9 +35,9 @@ const Home = () => {
                         <StarSpan>150</StarSpan>
                     </StarDiv>
                 </TopBar>
-                <SignPost>
-                    <img src={signpost} />
-                </SignPost>
+                <WhiteBorder>
+                    <SignPost><SignPostImage src={signpost} /></SignPost>
+                </WhiteBorder>
             </PurpleBackground>
             <MainContainer>
                 <img className="arrow" src={arrow} />
