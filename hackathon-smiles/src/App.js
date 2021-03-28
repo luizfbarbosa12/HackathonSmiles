@@ -8,6 +8,7 @@ import YouWillTravel from "./pages/YouWillTravel";
 import WhichAccomodation from './pages/WhichAccomodation'
 import WhatKindOfPension from './pages/WhatKindOfPension'
 import MaxValue from './pages/MaxValue'
+import Loading from "./pages/LoadingPage";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
      {/* <Choices/> */}
      {/* <Remember/> */}
      {/* <CompleteMissions/> */}
-     <WhatKindOfPension/>
+     {/* <WhatKindOfPension/> */}
      {/* <Remember/>
     //  <CompleteMissions/> */}
     {/* <WhichAccomodation/> */}
@@ -26,7 +27,8 @@ function App() {
      {/* <Remember/>
     //  <CompleteMissions/> */}
     {/* <WhichAccomodation/> */}
-    <MaxValue/>
+    {/* <MaxValue/> */}
+    <Loading/>
     </div>
   );
 }

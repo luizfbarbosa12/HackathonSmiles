@@ -10,7 +10,6 @@ import profileSignPost from '../../assets/img/profile-signpost.png';
 import profileTicket from '../../assets/img/profile-ticket.png';
 import menu from '../../assets/img/menu.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBorderAll } from '@fortawesome/free-solid-svg-icons'
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 
 const Home = () => {
@@ -18,48 +17,48 @@ const Home = () => {
     <div className="App">
       <PurpleBackground>
         <TopBar>
-          <div><StarImg src={star} /></div>
+          <div><StarImg src={star} alt={''}/></div>
           <div><StarSpan>150</StarSpan></div>
         </TopBar>
         <ImagemPerfil>
-          <img src={profile} />
+          <img src={profile} alt={''}/>
         </ImagemPerfil>
       </PurpleBackground>
       <MainContainer>
         <WelcomeP>Bem-vinda, Maria!</WelcomeP>
         <Card>
           <div className="border-left-card-first">
-            <CardImage src={profileList} />
+            <CardImage src={profileList} alt={''}/>
           </div>
           <p className="color-text-card-first">Definição</p>
         </Card>
         <Card>
           <div className="border-left-card-second">
-            <CardImage src={profileSignPost} />
+            <CardImage src={profileSignPost} alt={''}/>
           </div>
           <p className="color-text-card-second">Escolhas</p>
         </Card>
         <Card>
           <div className="border-left-card-third">
-            <CardImage src={profileGlobe} />
+            <CardImage src={profileGlobe} alt={''}/>
           </div>
           <p className="color-text-card-third">Roteiro</p>
         </Card>
         <Card>
           <div className="border-left-card-fourth">
-            <CardImage src={profileKey} />
+            <CardImage src={profileKey} alt={''}/>
           </div>
           <p className="color-text-card-fourth">Segurança</p>
         </Card>
         <Card>
           <div className="border-left-card-fifth">
-            <CardImage src={profilePassport} />
+            <CardImage src={profilePassport} alt={''}/>
           </div>
           <p className="color-text-card-fifth">Documentos</p>
         </Card>
         <Card>
           <div className="border-left-card-sixth">
-            <CardImage src={profileTicket} />
+            <CardImage src={profileTicket} alt={''}/>
           </div>
           <p className="color-text-card-sixth">Bônus</p>
         </Card>
@@ -68,25 +67,25 @@ const Home = () => {
         <ul>
           <li>
             <div className="options">
-              <img width="13px" src={menu}/> <br/>
+              <img width="13px" src={menu} alt={''}/> <br/>
             Fases
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faStar} /><br />
+              <FontAwesomeIcon icon={faStar} alt={''}/><br />
               Prêmios
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faMap} /><br />
+              <FontAwesomeIcon icon={faMap} alt={''}/><br />
             Mapa
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faUser} /><br />
+              <FontAwesomeIcon icon={faUser} alt={''}/><br />
             Perfil
             </div>
           </li>

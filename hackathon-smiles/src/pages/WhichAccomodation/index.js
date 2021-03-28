@@ -17,7 +17,6 @@ import {
   GreenBorder,
   NomePerfil, 
   CardIcon,
-  MoneyBagText,
   PurpleArrow
 } from "./styles";
 import star from "../../assets/img/star 1.png";
@@ -27,11 +26,6 @@ import numberOne from "../../assets/img/numberOne.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 import menu from '../../assets/img/menu.png';
-import hotel from '../../assets/img/hotel.png'
-import clock from '../../assets/img/clock.png'
-import notebookAndPencil from '../../assets/img/notebookAndPencil.png'
-import moneyBag from '../../assets/img/moneyBag.png'
-import flatMap from '../../assets/img/flatMap.png'
 import purpleArrow from '../../assets/img/purpleArrow.png'
 
 const WhichAccomodation = () => {
