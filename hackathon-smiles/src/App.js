@@ -17,6 +17,7 @@ import HotelSuggestions from './pages/HotelSuggestions'
 import CompleteMissionsTwo from './pages/CompleteMissionsTwo'
 import AchievementUnlocked from './pages/AchievementUnlocked'
 import RewardsList from './pages/RewardsList'
+import Map from './pages/Map'
 
 
 function App() {
@@ -74,7 +75,9 @@ function App() {
         <Route exact path="/your-travels">
           <YourTravels />
         </Route>
-
+        <Route exact path="/map">
+          <Map />
+        </Route>
       </Switch>
     </BrowserRouter>
   );
