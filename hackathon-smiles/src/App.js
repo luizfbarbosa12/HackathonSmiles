@@ -5,6 +5,7 @@ import Home from "./pages/Home/home"
 import Choices from './pages/Choices'
 import Remember from "./pages/Remember";
 import YouWillTravel from "./pages/YouWillTravel";
+import WhichAccomodation from './pages/WhichAccomodation'
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
      {/* <Remember/> */}
      {/* <CompleteMissions/> */}
      <YouWillTravel/>
+     {/* <Remember/>
+    //  <CompleteMissions/> */}
+    <WhichAccomodation/>
     </div>
   );
 }
