@@ -34,7 +34,9 @@ import closeButton from '../../assets/img/closeButton.png'
 const MissionComplete = () => {
   const history = useHistory();
 
-
+  const goToHomepage = () => {
+    history.replace("/")
+}
 
 
   const voltar = () => {
@@ -78,7 +80,7 @@ const MissionComplete = () => {
       </MainContainer>
       <Footer>
         <ul>
-          <li>
+          <li onClick={goToHomepage}>
             <div className="options">
               <img width="13px" src={menu} alt={'icon'}/> <br />
               Fases

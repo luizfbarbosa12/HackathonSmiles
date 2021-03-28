@@ -20,6 +20,11 @@ const Home = () => {
       const completeMissao = ()=>{
         history.push("/complete-missions")
       } 
+
+      const goToHomepage = () => {
+        history.replace("/")
+    }
+
     return (
         <div className="App">
             <PurpleBackground>
@@ -53,7 +58,7 @@ const Home = () => {
             </MainContainer>
             <Footer>
                 <ul>
-                    <li>
+                    <li onClick={goToHomepage}>
                         <div className="options">
                             <img width="13px" src={menu} alt="menu"/> <br />
             Fases

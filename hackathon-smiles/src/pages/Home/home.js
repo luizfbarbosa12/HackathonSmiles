@@ -16,7 +16,9 @@ import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 const Home = () => {
   const history = useHistory();
 
-
+  const goToHomepage = () => {
+    history.replace("/")
+}
 
 
   const escolhas = ()=>{
@@ -75,7 +77,7 @@ const Home = () => {
       </MainContainer>
       <Footer>
         <ul>
-          <li>
+          <li onClick={goToHomepage}>
             <div className="options">
               <img width="13px" src={menu} alt={''}/> <br/>
             Fases

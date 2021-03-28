@@ -34,8 +34,9 @@ import negativeImage from '../../assets/img/negative-vote.png'
 const Remember = () => {
   const history = useHistory();
 
-
-
+  const goToHomepage = () => {
+    history.replace("/")
+}
 
   const voltar = () => {
     history.replace("/max-value")
@@ -81,7 +82,7 @@ const Remember = () => {
       </MainContainer>
       <Footer>
         <ul>
-          <li>
+          <li onClick={goToHomepage}>
             <div className="options">
               <img width="13px" src={menu} alt={'icon'} /> <br />
               Fases

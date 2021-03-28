@@ -35,7 +35,9 @@ import withPartnerImage from '../../assets/img/with-partner.png'
 const Remember = () => {
   const history = useHistory();
 
-
+  const goToHomepage = () => {
+    history.replace("/")
+}
 
 
   const voltar = () => {
@@ -90,7 +92,7 @@ const Remember = () => {
       </MainContainer>
       <Footer>
         <ul>
-          <li>
+          <li onClick={goToHomepage}>
             <div className="options">
               <img width="13px" src={menu} alt={'icon'} /> <br />
               Fases
