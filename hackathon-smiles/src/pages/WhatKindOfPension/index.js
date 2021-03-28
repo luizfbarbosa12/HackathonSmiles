@@ -15,7 +15,7 @@ import {
   Level,
   NumberOne,
   GreenBorder,
-  NomePerfil, 
+  NomePerfil,
   CardIcon,
   MoneyBagText,
   PurpleArrow
@@ -27,16 +27,15 @@ import numberOne from "../../assets/img/numberOne.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 import menu from '../../assets/img/menu.png';
-import hotel from '../../assets/img/hotel.png'
-import clock from '../../assets/img/clock.png'
-import notebookAndPencil from '../../assets/img/notebookAndPencil.png'
-import moneyBag from '../../assets/img/moneyBag.png'
-import flatMap from '../../assets/img/flatMap.png'
+import allInclusiveImage from '../../assets/img/all-inclusive.png'
+import breakfastImage from '../../assets/img/breakfast.png'
+import withoutMealImage from '../../assets/img/without-meal.png'
+import lunchImage from '../../assets/img/lunch.png'
 import purpleArrow from '../../assets/img/purpleArrow.png'
 
-const WhichAccomodation = () => {
-    return (
-        <div className="App">
+const Remember = () => {
+  return (
+    <div className="App">
       <PurpleBackground>
         <TopBar>
           <ImagemPerfil>
@@ -47,83 +46,69 @@ const WhichAccomodation = () => {
           </NomePerfil>
           <StarDiv>
             <div>
-              <StarImg src={star} alt={'star'}/>
+              <StarImg src={star} alt={'star'} />
             </div>
             <StarSpan>150</StarSpan>
           </StarDiv>
         </TopBar>
         <GreenBorder>
-          <Level><NumberOne src={numberOne} alt={'numberone'}/></Level>
+          <Level><NumberOne src={numberOne} alt={'numberone'} /></Level>
         </GreenBorder>
       </PurpleBackground>
       <MainContainer>
         <LeftArrow>
-          <img src={arrow} alt={'arrow'}/>
+          <img src={arrow} alt={'arrow'} />
         </LeftArrow>
-        <WelcomeP>Qual tipo de acomodação você vai escolher?</WelcomeP>
+        <WelcomeP>Você prefere qual tipo <br/> de pensão?</WelcomeP>
         <Card>
-          <CardIcon>
-          <input type="radio" name="radio"/>
-          </CardIcon>
-          <p>Hotel</p>
+          <img src={allInclusiveImage} />
+          <p>Café da manhã</p>
         </Card>
         <Card>
-          <CardIcon>
-          <input type="radio" name="radio"/>
-          </CardIcon>
-          <p>Casa de aluguel</p>
+          <img src={breakfastImage} />
+          <p>All inclusive</p>
         </Card>
         <Card>
-          <CardIcon>
-          <input type="radio" name="radio"/>
-          </CardIcon>
-          <p>Casa de conhecidos</p>
+          <img src={withoutMealImage} />
+          <p>Sem refeição</p>
         </Card>
         <Card>
-          <CardIcon>
-          <input type="radio" name="radio"/>
-          </CardIcon>
-          <p>Resorts</p>
+          <img src={lunchImage} />
+          <p>Almoço</p>
         </Card>
-        <Card>
-          <CardIcon>
-          <input type="radio" name="radio"/>
-          </CardIcon>
-          <p>Chalés</p>
-        </Card>
-        <PurpleArrow><img src={purpleArrow} alt={'arrow'}/></PurpleArrow>
+        
       </MainContainer>
       <Footer>
         <ul>
           <li>
             <div className="options">
-              <img width="13px" src={menu} alt={'icon'}/> <br />
+              <img width="13px" src={menu} alt={'icon'} /> <br />
               Fases
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faStar} alt={'icon'}/><br />
+              <FontAwesomeIcon icon={faStar} alt={'icon'} /><br />
               Prêmios
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faMap} alt={'icon'}/><br />
+              <FontAwesomeIcon icon={faMap} alt={'icon'} /><br />
               Mapa
             </div>
           </li>
           <li>
             <div className="options">
-              <FontAwesomeIcon icon={faUser} alt={'icon'}/><br />
+              <FontAwesomeIcon icon={faUser} alt={'icon'} /><br />
               Perfil
             </div>
           </li>
         </ul>
       </Footer>
     </div>
-    )
+  )
 }
 
 
-export default WhichAccomodation;
+export default Remember;

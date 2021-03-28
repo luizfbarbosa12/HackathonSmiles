@@ -6,6 +6,7 @@ import Choices from './pages/Choices'
 import Remember from "./pages/Remember";
 import YouWillTravel from "./pages/YouWillTravel";
 import WhichAccomodation from './pages/WhichAccomodation'
+import WhatKindOfPension from './pages/WhatKindOfPension'
 import MaxValue from './pages/MaxValue'
 
 
@@ -17,6 +18,10 @@ function App() {
      {/* <Choices/> */}
      {/* <Remember/> */}
      {/* <CompleteMissions/> */}
+     <WhatKindOfPension/>
+     {/* <Remember/>
+    //  <CompleteMissions/> */}
+    {/* <WhichAccomodation/> */}
      {/* <YouWillTravel/> */}
      {/* <Remember/>
     //  <CompleteMissions/> */}
