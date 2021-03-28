@@ -184,5 +184,6 @@ export const Footer = styled.footer`
     .options{
         display: inline-block;
         margin-right:17px;
+        cursor: pointer;
     }
 `

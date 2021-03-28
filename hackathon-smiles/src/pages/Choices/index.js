@@ -33,7 +33,9 @@ import menu from '../../assets/img/menu.png';
 const Escolhas = () => {
   const history = useHistory();
 
-
+  const goToHomepage = () => {
+    history.replace("/")
+}
 
 
   const voltar = ()=>{
@@ -85,7 +87,7 @@ const Escolhas = () => {
       </MainContainer>
       <Footer>
         <ul>
-          <li>
+          <li onClick={goToHomepage}>
             <div className="options">
               <img width="13px" src={menu} alt={''}/> <br />
               Fases

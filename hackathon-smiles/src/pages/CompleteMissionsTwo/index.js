@@ -21,6 +21,9 @@ import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 const CompleteMissionsTwo = () => {
     const history = useHistory();
 
+    const goToHomepage = () => {
+        history.replace("/")
+    }
 
     useEffect(() => {
         setTimeout(() => {
@@ -99,7 +102,7 @@ const CompleteMissionsTwo = () => {
             </MainContainer>
             <Footer>
                 <ul>
-                    <li>
+                    <li onClick={goToHomepage}>
                         <div className="options">
                             <img width="13px" src={menu} alt={''} /> <br />
             Fases
