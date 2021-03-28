@@ -15,6 +15,8 @@ import MissionComplete from './pages/MissionComplete'
 import HotelSuggestions from './pages/HotelSuggestions'
  
 import CompleteMissionsTwo from './pages/CompleteMissionsTwo'
+import AchievementUnlocked from './pages/AchievementUnlocked'
+
 
 
 function App() {
@@ -36,12 +38,12 @@ function App() {
     {/* <YouUseMiles/> */}
     {/* <MaxValue/> */}
     {/* <Loading/> */}
+    <AchievementUnlocked/>
 
     {/* <MissionComplete/> */}
     <HotelSuggestions/>
 
     <CompleteMissionsTwo/>
-
     </div>
   );
 }
