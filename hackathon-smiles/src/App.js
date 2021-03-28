@@ -11,6 +11,7 @@ import MaxValue from './pages/MaxValue'
 import YouUseMiles from './pages/YouUseMiles'
 import Loading from "./pages/LoadingPage";
 import MissionComplete from './pages/MissionComplete'
+import HotelSuggestions from './pages/HotelSuggestions'
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
     {/* <YouUseMiles/> */}
     {/* <MaxValue/> */}
     {/* <Loading/> */}
-    <MissionComplete/>
+    {/* <MissionComplete/> */}
+    <HotelSuggestions/>
     </div>
   );
 }
