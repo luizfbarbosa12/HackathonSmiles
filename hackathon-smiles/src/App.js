@@ -12,11 +12,15 @@ import MaxValue from './pages/MaxValue'
 import YouUseMiles from './pages/YouUseMiles'
 import Loading from "./pages/LoadingPage";
 import MissionComplete from './pages/MissionComplete'
+<<<<<<< HEAD
 import YourTravels from './pages/YourTravels'
+=======
+>>>>>>> f36bccb15e073a2b4555783958e1100523dfc30e
 import HotelSuggestions from './pages/HotelSuggestions'
 import CompleteMissionsTwo from './pages/CompleteMissionsTwo'
 import AchievementUnlocked from './pages/AchievementUnlocked'
 import RewardsList from './pages/RewardsList'
+import YourTravels from './pages/YourTravels'
 
 
 function App() {
@@ -70,6 +74,9 @@ function App() {
         </Route>
         <Route exact path="/rewards-list">
           <RewardsList />
+        </Route>
+        <Route exact path="/your-travels">
+          <YourTravels />
         </Route>
       </Switch>
     </BrowserRouter>
