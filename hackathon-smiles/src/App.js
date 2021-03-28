@@ -2,14 +2,16 @@ import "./App.css";
 import AccommodationReservation from "./pages/AccommodationReservation"
 import Home from "./pages/Home/home"
 import Choices from './pages/Choices'
+import Remember from "./pages/Remember";
 
 
 function App() {
   return (
     <div className="App">
      {/* <Home/> */}
-     <AccommodationReservation/>
+     {/* <AccommodationReservation/> */}
      {/* <Choices/> */}
+     <Remember/>
     </div>
   );
 }
