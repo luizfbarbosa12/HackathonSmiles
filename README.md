@@ -54,7 +54,7 @@ npm install
 ```
 
 Quarto passo: 
-- Executar a aplição
+- Executar a aplição no formato mobile com a largura de tela (width) em 360px. A aplicação foi criada utilizando a tela do Samsung Galaxy S9 como base.
 ```sh
 npm run start
 ```
