@@ -1,8 +1,7 @@
-import {useHistory, history} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Footer, MainImage, MainText, SignPost, ImagePng, NomePerfil, StarDiv, WhiteBorder, SignPostImage } from "./styles";
 import profile from "../../assets/img/profile-pic.png";
 
-import arrow from '../../assets/img/arrow.png';
 import brazil from '../../assets/img/brazil.png';
 import star from '../../assets/img/star 1.png';
 
@@ -14,9 +13,7 @@ import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
 
 const Home = () => {
     const history = useHistory();
-      const completeMissao = ()=>{
-        history.push("/complete-missions")
-      } 
+
 
       const goToHomepage = () => {
         history.replace("/")

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useHistory, history } from "react-router-dom";
+import React, { useEffect } from 'react'
+import { useHistory } from "react-router-dom";
 import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Footer, MainImage, SignPost, ImagePng, NomePerfil, StarDiv, Card, CardImage } from "./styles";
 import profile from "../../assets/img/profile-pic.png";
 import signpost from "../../assets/img/signpost.png";

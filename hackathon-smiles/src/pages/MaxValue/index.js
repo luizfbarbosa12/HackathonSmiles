@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory, history } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -134,7 +134,7 @@ const goToRewardsList = () => {
               Prêmios
             </div>
           </li>
-          <li>
+          <li onClick={goToMap}>
             <div className="options">
               <FontAwesomeIcon icon={faMap} alt={'icon'} /><br />
               Mapa

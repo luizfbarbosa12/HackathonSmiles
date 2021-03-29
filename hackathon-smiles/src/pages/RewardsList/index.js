@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory, history } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -88,7 +88,7 @@ const RewardsList = () => {
           </CardIcon>
           <PrecoEstrelas>
           <p>Cupom de R$10 no Uber</p>
-          <span><img src={star}/><span>100</span></span>
+          <span><img src={star} alt={'profile'}/><span>100</span></span>
           </PrecoEstrelas>
           <BotaoQuero>Quero!</BotaoQuero>
         </Card>
@@ -98,9 +98,9 @@ const RewardsList = () => {
           </CardIcon>
           <PrecoEstrelas>
           <p>Cupom de R$15 no Uber Eats</p>
-          <span><img src={star}/><span>500</span></span>
+          <span><img src={star}alt={'profile'}/><span>500</span></span>
           </PrecoEstrelas>
-          <Cadeado src={cadeado}/>
+          <Cadeado src={cadeado} alt={'profile'}/>
         </Card>
         <Card>
           <CardIcon>
@@ -108,9 +108,9 @@ const RewardsList = () => {
           </CardIcon>
           <PrecoEstrelas>
           <p>R$15 para usar no posto Shell</p>
-          <span><img src={star}/><span>1.000</span></span>
+          <span><img src={star} alt={'profile'}/><span>1.000</span></span>
           </PrecoEstrelas>
-          <Cadeado src={cadeado}/>
+          <Cadeado src={cadeado} alt={'profile'}/>
         </Card>
         <Card>
           <CardIcon>
@@ -118,9 +118,9 @@ const RewardsList = () => {
           </CardIcon>
           <PrecoEstrelas>
           <p>Voucher de restaurante</p>
-          <span><img src={star}/><span>1.000</span></span>
+          <span><img src={star} alt={'profile'}/><span>1.000</span></span>
           </PrecoEstrelas>
-          <Cadeado src={cadeado}/>
+          <Cadeado src={cadeado} alt={'profile'}/>
         </Card>
         <Card>
           <CardIcon>
@@ -128,9 +128,9 @@ const RewardsList = () => {
           </CardIcon>
           <PrecoEstrelas>
           <p>5% de desconto na localiza</p>
-          <span><img src={star}/><span>1.200</span></span>
+          <span><img src={star} alt={'profile'}/><span>1.200</span></span>
           </PrecoEstrelas>
-          <Cadeado src={cadeado}/>
+          <Cadeado src={cadeado} alt={'profile'}/>
         </Card>
         <Card>
           <CardIcon>
@@ -138,9 +138,9 @@ const RewardsList = () => {
           </CardIcon>
           <PrecoEstrelas>
           <p>1000 milhas da Smiles</p>
-          <span><img src={star}/><span>3.000</span></span>
+          <span><img src={star} alt={'profile'}/><span>3.000</span></span>
           </PrecoEstrelas>
-          <Cadeado src={cadeado}/>
+          <Cadeado src={cadeado} alt={'profile'}/>
         </Card>
         <Card>
           <CardIcon>
@@ -148,9 +148,9 @@ const RewardsList = () => {
           </CardIcon>
           <PrecoEstrelas>
           <p>15 min de Wi-Fi no avião</p>
-          <span><img src={star}/><span>5.000</span></span>
+          <span><img src={star} alt={'profile'}/><span>5.000</span></span>
           </PrecoEstrelas>
-          <Cadeado src={cadeado}/>
+          <Cadeado src={cadeado} alt={'profile'}/>
         </Card>
         <Card>
           <CardIcon>
@@ -158,9 +158,9 @@ const RewardsList = () => {
           </CardIcon>
           <PrecoEstrelas>
           <p>Par de ingressos para atração</p>
-          <span><img src={star}/><span>10.000</span></span>
+          <span><img src={star} alt={'profile'}/><span>10.000</span></span>
           </PrecoEstrelas>
-          <Cadeado src={cadeado}/>
+          <Cadeado src={cadeado} alt={'profile'}/>
         </Card>
         <Card>
           <CardIcon>
@@ -168,9 +168,9 @@ const RewardsList = () => {
           </CardIcon>
           <PrecoEstrelas>
           <p>5.000 milhas da Smiles</p>
-          <span><img src={star}/><span>50.000</span></span>
+          <span><img src={star} alt={'profile'}/><span>50.000</span></span>
           </PrecoEstrelas>
-          <Cadeado  src={cadeado}/>
+          <Cadeado  src={cadeado} alt={'profile'}/>
         </Card>
         
         

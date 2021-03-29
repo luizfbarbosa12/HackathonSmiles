@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory, history } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -23,7 +23,6 @@ import {
 } from "./styles";
 import star from "../../assets/img/star 1.png";
 import profile from "../../assets/img/profile-pic.png";
-import arrow from "../../assets/img/arrow.png";
 import numberOne from "../../assets/img/numberOne.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faStar, faUser } from '@fortawesome/free-regular-svg-icons'
@@ -102,7 +101,7 @@ const goToMap = () => {
               Prêmios
             </div>
           </li>
-          <li>
+          <li onClick={goToMap}>
             <div className="options">
               <FontAwesomeIcon icon={faMap} alt={'icon'}/><br />
               Mapa

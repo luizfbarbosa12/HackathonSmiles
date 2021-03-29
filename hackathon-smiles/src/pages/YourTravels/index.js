@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import { useHistory, history } from "react-router-dom";
-import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan,Link, MainContainer, WelcomeP, Footer, MainImage, SignPost, ImagePng, EditImage, StarDiv, Card, CardImage } from "./styles";
+import React from 'react'
+import { useHistory } from "react-router-dom";
+import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan,Link, MainContainer, WelcomeP, Footer, SignPost, ImagePng, EditImage, StarDiv, Card, CardImage } from "./styles";
 import profile from "../../assets/img/profile-pic.png";
 import configImage from "../../assets/img/config.png";
 import editImage from "../../assets/img/edit.png";
-import arrow from '../../assets/img/arrow.png';
 import progressTravel from '../../assets/img/progress-travel.png';
 import palmTree from '../../assets/img/palm-tree.png';
 import arrowPurple from '../../assets/img/purpleArrow.png';
 import star from '../../assets/img/star 1.png';
-import check from '../../assets/img/check.png';
 import cadeado from '../../assets/img/cadeado.png';
 import hat from '../../assets/img/hat.png';
 
@@ -25,9 +23,6 @@ const YourTravels = () => {
         history.replace('/rewards-list')
       }
 
-    const voltar = () => {
-        history.replace("/mission-complete")
-    }
 
     const goToHomepage = () => {
         history.replace("/")

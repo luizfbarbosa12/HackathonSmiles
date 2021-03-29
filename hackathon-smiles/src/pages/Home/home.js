@@ -1,4 +1,4 @@
-import {useHistory, history} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import { PurpleBackground, TopBar, ImagemPerfil, StarImg, StarSpan, MainContainer, WelcomeP, Card, CardImage, Footer } from "./styles";
 import profile from '../../assets/img/profile-pic.png';
 import star from '../../assets/img/star 1.png';

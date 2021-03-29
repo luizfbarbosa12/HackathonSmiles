@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory, history } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
@@ -17,9 +17,6 @@ import {
   NumberOne,
   GreenBorder,
   NomePerfil,
-  CardIcon,
-  MoneyBagText,
-  PurpleArrow
 } from "./styles";
 import star from "../../assets/img/star 1.png";
 import profile from "../../assets/img/profile-pic.png";
@@ -81,11 +78,11 @@ const goToRewardsList = () => {
         </LeftArrow>
         <WelcomeP>Vai utilizar milhas<br/>nas diárias?</WelcomeP>
         <Card onClick={hotelSugestao} className="cursorPointer">
-          <img src={PositiveImage} />
+          <img src={PositiveImage} alt={'icon'}/>
           <p>Sim</p>
         </Card>
         <Card>
-          <img src={negativeImage} />
+          <img src={negativeImage} alt={'icon'}/>
           <p>Não</p>
         </Card>
         
@@ -104,7 +101,7 @@ const goToRewardsList = () => {
               Prêmios
             </div>
           </li>
-          <li>
+          <li onClick={goToMap}>
             <div className="options">
               <FontAwesomeIcon icon={faMap} alt={'icon'} /><br />
               Mapa

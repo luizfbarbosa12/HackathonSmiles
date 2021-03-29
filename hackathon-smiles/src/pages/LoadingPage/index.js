@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { useHistory, history } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import {
   PurpleBackground,
   TopBar,
