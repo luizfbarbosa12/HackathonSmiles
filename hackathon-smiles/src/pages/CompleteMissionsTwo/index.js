@@ -33,6 +33,10 @@ const CompleteMissionsTwo = () => {
         history.push("/your-travels")
       }
 
+      const goToMap = () => {
+        history.replace("/map")
+    }
+
     useEffect(() => {
         setTimeout(() => {
             history.push("/achievement-unlocked")
@@ -122,7 +126,7 @@ const CompleteMissionsTwo = () => {
               Prêmios
             </div>
                     </li>
-                    <li>
+                    <li onClick={goToMap}>
                         <div className="options">
                             <FontAwesomeIcon icon={faMap} alt={''} /><br />
             Mapa

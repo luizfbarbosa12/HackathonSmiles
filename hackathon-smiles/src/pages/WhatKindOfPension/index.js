@@ -41,10 +41,13 @@ const goToRewardsList = () => {
   history.replace('/rewards-list')
 }
 
-const goToProfile = () => {
-  history.push("/your-travels")
-}
+   const goToProfile = () => {
+        history.push("/your-travels")
+    }     
 
+const goToMap = () => {
+        history.replace("/map")
+    }
   const voltar = ()=>{
     history.replace("/which-accomodation")
   } 

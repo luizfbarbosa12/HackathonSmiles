@@ -31,6 +31,10 @@ const Home = () => {
         history.push("/your-travels")
       }
 
+      const goToMap = () => {
+        history.replace("/map")
+    }
+
     const voltar = () => {
         history.replace("/accommodation-reservation")
     }
@@ -115,7 +119,7 @@ const Home = () => {
               Prêmios
             </div>
                     </li>
-                    <li>
+                    <li onClick={goToMap}>
                         <div className="options">
                             <FontAwesomeIcon icon={faMap} alt={''} /><br />
             Mapa

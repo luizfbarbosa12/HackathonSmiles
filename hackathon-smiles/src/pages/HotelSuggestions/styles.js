@@ -182,6 +182,18 @@ export const Card = styled.div`
     margin: 30px 5px;
     justify-content: center;
     border-radius: 5px;
+    padding:2px;
+    cursor: pointer;
+
+    &:hover{
+      background: linear-gradient(to top, #dbd9d9, white);
+  transition:1s all;
+    }
+
+    &:checked{
+      background: linear-gradient(to top, #dbd9d9, white);
+  transition:1s all;
+    }
 `
 
 export const Cards = styled.div`
@@ -191,17 +203,17 @@ export const Cards = styled.div`
   align-items: center
 `
 export const FotoHotelEsquerda = styled.img`
-  width: 140px;
+  width: 100%;
   height: 93px;
   margin: -1;
   /* border: 1px solid black; */
 `
 
 export const FotoHotelDireita = styled.img`
-  width: 140px;
+  width: 100%;
   height: 89px;
   /* border: 1px solid black; */
-  padding: 1px;
+  padding: 2px;
 `
 
 export const Link = styled.a`
