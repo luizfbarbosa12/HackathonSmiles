@@ -56,6 +56,10 @@ const RewardsList = () => {
       history.push("/your-travels")
     }
 
+    const goToMap = () => {
+      history.push("/map")
+    }
+
     return (
         <div className="App">
       <PurpleBackground>
@@ -185,7 +189,7 @@ const RewardsList = () => {
               Prêmios
             </div>
           </li>
-          <li>
+          <li onClick={goToMap}>
             <div className="options">
               <FontAwesomeIcon icon={faMap} alt={'icon'}/><br />
               Mapa
